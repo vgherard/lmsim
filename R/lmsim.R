@@ -8,7 +8,7 @@ lmsim <- function(formula,
 									...
 									)
 {
-	if (class(rdata) != "rdata")
+	if (!is(rdata, "rdata"))
 		stop("'rdata' must be an object of class \"rdata\"")
 
 	B <- as.integer(B)
