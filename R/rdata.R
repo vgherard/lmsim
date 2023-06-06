@@ -145,3 +145,5 @@ rdata_post_checks <- function(rxy)
 	)
 }
 
+#' @export
+print.rdata <- function(x, ...) cat("An rdata.")

@@ -46,9 +46,9 @@ of the response, that may in principle depend on \eqn{X_i}.
 }
 
 These terms are encoded, respectively, by the \code{f} and \code{eps} arguments of
-\code{rdata_fun()}. These functions are supposed to take a single numeric vector
-or matrix argument, and return a vector with the same number of observations,
-as reported by \code{NROW()}.
+\code{rdata_fun()}. These functions are supposed to be called with a single
+numeric vector or matrix argument, and return a vector with the same number
+of observations, as reported by \code{NROW()}.
 
 It is understood that the outputs of \code{f} and \code{eps} should be
 deterministic and random, respectively, and that \code{eps} should have zero
@@ -83,7 +83,9 @@ function return a \code{data.frame} of observations drawn from the specified
 \examples{
 # Linear model: Y = q + m X + eps
 rxy <- rdata_fun(
-  x = rnorm, f = \(x) 1 + 2*x, eps = \(x) rnorm(length(x), sd = 0.1)
+  x = rnorm,
+  f = \(x) 1 + 2*x,
+  eps = \(x) rnorm(length(x), sd = 0.1)
 )
 
 # calling:
