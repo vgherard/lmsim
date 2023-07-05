@@ -2,8 +2,8 @@
 % Please edit documentation in R/lmsim-package.R
 \docType{package}
 \name{lmsim-package}
-\alias{lmsim}
 \alias{lmsim-package}
+\alias{_PACKAGE}
 \title{lmsim: What the Package Does (One Line, Title Case)}
 \description{
 What the package does (one paragraph).

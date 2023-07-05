@@ -1,4 +1,5 @@
 #' @keywords internal
+#' @aliases lmsim-package
 "_PACKAGE"
 
 ## usethis namespace: start

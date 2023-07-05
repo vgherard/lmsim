@@ -16,7 +16,8 @@ return a numeric vector with the same number of observations (as given by
 \code{NROW()}, \emph{cf.} \link[base]{nrow}). See Details.}
 }
 \value{
-a function of a single integer argument \code{n}.
+A function of no arguments in the fixed \eqn{X} case,
+and of an integer argument \code{n} in the random \eqn{X} case. See Details.
 }
 \description{
 Generate datasets \eqn{\{(X_i, Y_i)\}_{i = 1, 2, \dots, n}} paired

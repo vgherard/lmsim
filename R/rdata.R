@@ -17,7 +17,8 @@
 #' return a numeric vector with the same number of observations (as given by
 #' `NROW()`, *cf.* \link[base]{nrow}). See Details.
 #'
-#' @returns a function of a single integer argument `n`.
+#' @returns A function of no arguments in the fixed \eqn{X} case,
+#' and of an integer argument `n` in the random \eqn{X} case. See Details.
 #'
 #' @details
 #' The only purpose of this function is to provide a convenience wrapper for
@@ -146,4 +147,7 @@ rdata_post_checks <- function(rxy)
 }
 
 #' @export
-print.rdata <- function(x, ...) cat("An rdata.")
+print.rdata <- function(x, ...) {
+	cat("An rdata.")
+	return(invisible(x))
+}
